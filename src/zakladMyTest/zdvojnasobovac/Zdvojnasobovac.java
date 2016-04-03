@@ -14,4 +14,3 @@ public class Zdvojnasobovac {
 	         System.out.println("Zdvojnásobené číslo je: " + a);
 	    }
 }
-	
