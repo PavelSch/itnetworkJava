@@ -31,5 +31,10 @@ public class Programator extends Clovek implements Pracujici {
     public String getJazyk () {
     return jazyk;
     }    
+    
+    @Override
+    public void vypisPovolani() {
+        System.out.println ("Programator!");
+    }
 
 }

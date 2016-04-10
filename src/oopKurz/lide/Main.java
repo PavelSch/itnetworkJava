@@ -13,18 +13,21 @@ public class Main {
     
     public static void main (String [] args) {
         
-        Clovek karel = new Clovek ("Karel", 43);
-        // clovek, ktery nema zadne vlastnosti
-        karel.pozdrav("Dobrý den");
-        karel.pozdrav();
+//        Clovek karel = new Clovek ("Karel", 43);
+//        clovek, ktery nema zadne vlastnosti
+//        karel.pozdrav("Dobrý den");
+//        karel.pozdrav();
         Clovek josef = new Programator ("Josef", 39, "Java");
     //    Programator josef = new Programator ("Josef", 39, "Java");
         josef.pozdrav("Zdar");
         josef.pozdrav();
     //    System.out.println(josef.getJazyk());
         System.out.println(josef);
+        josef.vypisPovolani();
         Pracujici jiri = new Programator("Jiri", 45, "C#");
         System.out.println(jiri);
+        jiri.pracuj();
+//        jiri.vypisPovolani();
     }
     
 }

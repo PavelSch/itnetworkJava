@@ -9,7 +9,8 @@ package oopKurz.lide;
  *
  * @author PavelSch
  */
-public class Clovek {
+public abstract class Clovek {
+//public class Clovek {
     
         protected String jmeno;
         protected int vek = 42;
@@ -21,6 +22,7 @@ public class Clovek {
         this.vek = vek;
         }
        
+        public abstract void vypisPovolani();
         
         public void pozdrav(String pozdrav) {
             System.out.printf("%s %s, %d", pozdrav, jmeno, vek);
