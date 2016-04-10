@@ -11,8 +11,8 @@ package oopKurz.lide;
  */
 public class Clovek {
     
-        public String jmeno;
-        private int vek = 42;
+        protected String jmeno;
+        protected int vek = 42;
 
         
         public Clovek(String jmeno, int vek) {
