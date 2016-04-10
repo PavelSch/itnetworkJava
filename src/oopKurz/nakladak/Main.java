@@ -13,8 +13,15 @@ public class Main {
 
     public static void main (String args[]) {
         Nakladak nakladak = new Nakladak();
-        nakladak.naloz(60);
-        nakladak.vyloz(10);
+        nakladak.naloz(20);
+            try {
+                nakladak.vyloz(50);
+            }
+            catch (VykladkaException e)
+            {
+                e.vypisHlasku();
+            }
+            
         nakladak.vypis();
     }
 

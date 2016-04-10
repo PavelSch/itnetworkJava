@@ -26,11 +26,19 @@ public class Nakladak {
         if ((naklad - vykladka) >= 0) {
             naklad = naklad - vykladka;
         } else {
-            System.out.println("Nemůžete vyložit více, než je naloženo!");
+            throw new VykladkaException();
         }
     }
 
     public void vypis() {
         System.out.printf("Náklad uvnitř náklaďáku je: %d", naklad);
+    }
+}
+
+
+class VykladkaException extends IllegalArgumentException {  
+ 
+    public void vypisHlasku () {
+        System.out.println("Snažíš se vyložit více, než je naloženo!");
     }
 }
