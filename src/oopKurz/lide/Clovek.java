@@ -33,5 +33,11 @@ public class Clovek {
             System.out.printf("Ahoj %s, %d", jmeno, vek);
             System.out.println();
         }
+        
+        // místo metody vypis() mohu přepsat defaulní metodu toString
+        @Override
+        public String toString() {
+            return jmeno + ", " + vek;
+        }
             
 }

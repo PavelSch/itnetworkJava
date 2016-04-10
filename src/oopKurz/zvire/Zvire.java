@@ -13,6 +13,8 @@ public class Zvire {
     
     private String jmeno;
     private int vaha;
+    protected String zvuk;
+    protected Boolean maKridla = false;
     // private Boolean letajici;
 
     public Zvire (String jmeno, int vaha)  {
@@ -28,7 +30,7 @@ public class Zvire {
     }  
  */   
     public Boolean getLetajici () {
-        Boolean leta = vaha < 9;
+        Boolean leta = maKridla &&  (vaha < 9);
    //     setLetajici();
         return leta;
     }
@@ -47,6 +49,10 @@ public class Zvire {
             }
     }
     
+    public String vydejZvuk() {
+        return zvuk;
+    }
+    
     // Jsem schopen vlastnost létání odkontrolovat pouze na výstupu, tudíž nemusím zavádět další proměnnou.
     /*
     public String vypisLetajici () {
@@ -56,9 +62,18 @@ public class Zvire {
         }
     */
     
+    /*
     public void vypis () {
        // System.out.printf("Jsem zvířátko %s, vážím %d a " + vypisLetajici() + "létat", jmeno, vaha);
         System.out.printf("Jsem zvířátko %s, vážím %d a létající vlastnost %b." , getJmeno(), getVaha(), getLetajici());
         System.out.println();           
     }
+    */
+    
+    @Override
+    public String toString () {
+        return ("Jsem " + getJmeno() + ", vážím " + getVaha() + " létám: " + getLetajici() + ", " + vydejZvuk());
+    }
+   
+
 }

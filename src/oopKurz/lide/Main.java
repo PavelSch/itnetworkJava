@@ -17,7 +17,12 @@ public class Main {
         // clovek, ktery nema zadne vlastnosti
         karel.pozdrav("Dobrý den");
         karel.pozdrav();
-        
+        Clovek josef = new Programator ("Josef", 39, "Java");
+    //    Programator josef = new Programator ("Josef", 39, "Java");
+        josef.pozdrav("Zdar");
+        josef.pozdrav();
+    //    System.out.println(josef.getJazyk());
+        System.out.println(josef);
     }
     
 }
