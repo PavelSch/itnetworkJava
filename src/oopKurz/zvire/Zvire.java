@@ -53,6 +53,9 @@ public class Zvire {
         return zvuk;
     }
     
+    public void vydejZvuk2() {
+    }
+    
     // Jsem schopen vlastnost létání odkontrolovat pouze na výstupu, tudíž nemusím zavádět další proměnnou.
     /*
     public String vypisLetajici () {
@@ -72,7 +75,8 @@ public class Zvire {
     
     @Override
     public String toString () {
-        return ("Jsem " + getJmeno() + ", vážím " + getVaha() + " létám: " + getLetajici() + ", " + vydejZvuk());
+        return "Jsem " + getJmeno() + ", vážím " + getVaha() + " létám: " + getLetajici();
+    //    return ("Jsem " + getJmeno() + ", vážím " + getVaha() + " létám: " + getLetajici() + ", " + vydejZvuk());
     }
    
 

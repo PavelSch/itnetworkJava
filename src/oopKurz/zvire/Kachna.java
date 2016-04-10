@@ -17,12 +17,12 @@ public class Kachna extends Zvire {
     maKridla = true;
     }
  
- /*   
+       
     @Override
-    public void vydejZvuk () {
-        System.out.println(zvuk);
+    public void vydejZvuk2 () {
+        System.out.println("KvaKvaKva");
     }
-*/    
+   
   
     public String getZvuk () {
     return zvuk;

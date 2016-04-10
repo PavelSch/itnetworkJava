@@ -17,12 +17,12 @@ public class Kocka extends Zvire {
     maKridla = false;
     }
  
- /*   
+    
     @Override
-    public void vydejZvuk () {
-        System.out.println(zvuk);
+    public void vydejZvuk2 () {
+        System.out.println("MnauMnauMnau");
     }
-*/    
+    
   
     public String getZvuk () {
     return zvuk;
