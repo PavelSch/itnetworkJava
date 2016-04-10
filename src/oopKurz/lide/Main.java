@@ -13,9 +13,8 @@ public class Main {
     
     public static void main (String [] args) {
         
-        Clovek karel = new Clovek ();
+        Clovek karel = new Clovek ("Karel", 42);
         // clovek, ktery nema zadne vlastnosti
-        karel.jmeno = "Karel";
         karel.pozdrav("Dobrý den");
         karel.pozdrav();
         

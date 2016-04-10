@@ -14,13 +14,13 @@ public class Clovek {
         public String jmeno;
         private int vek = 42;
 
-        /*
+        
         public Clovek(String jmeno, int vek) {
         //atribut i parametr se jmenuji stejně a rozliším je pomocí this
         this.jmeno = jmeno; // this je zástupný znak za instanci // volání objektu "zvnitřku" 
         this.vek = vek;
         }
-        */
+       
         
         public void pozdrav(String pozdrav) {
             System.out.printf("%s %s, %d", pozdrav, jmeno, vek);
