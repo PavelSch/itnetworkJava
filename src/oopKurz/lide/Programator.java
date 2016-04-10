@@ -9,7 +9,7 @@ package oopKurz.lide;
  *
  * @author PavelSch
  */
-public class Programator extends Clovek {
+public class Programator extends Clovek implements Pracujici {
     private String jazyk;
     
     public Programator (String jmeno, int vek, String jazyk) {
@@ -23,6 +23,11 @@ public class Programator extends Clovek {
         System.out.println("Hello World!");
     }
 
+    @Override
+    public void pracuj() {
+        System.out.println ("Pilně programuji!");
+    }
+    
     public String getJazyk () {
     return jazyk;
     }    

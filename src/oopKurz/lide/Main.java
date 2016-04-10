@@ -23,6 +23,8 @@ public class Main {
         josef.pozdrav();
     //    System.out.println(josef.getJazyk());
         System.out.println(josef);
+        Pracujici jiri = new Programator("Jiri", 45, "C#");
+        System.out.println(jiri);
     }
     
 }
